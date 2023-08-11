@@ -1,7 +1,7 @@
 pytest reproducer
 =================
 
-When using the following together, pytest creates multiple instances of modules instead of reusing already-executed ones.
+When using the following together, pytest 7.4.0 creates multiple instances of modules instead of reusing already-executed ones.
 The bug triggers in pytest’s collection phase.
 
 Necessary for the bug to trigger:
