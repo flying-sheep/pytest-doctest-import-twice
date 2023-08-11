@@ -16,6 +16,11 @@ Run with e.g.
 .. code:: bash
 
    hatch run pytest
+   # or if you like typing
+   python -m virtualenv .venv; source .venv/bin/activate; pip install -e .; pytest
+
+No matter if you opt to install in dev mode like this, specify ``PYTHONPATH``,
+or install regularly, the bug is reproducible in any case.
 
 how it works
 ------------
