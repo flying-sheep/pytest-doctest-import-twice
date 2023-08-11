@@ -1,0 +1,21 @@
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'
+
+[project]
+name = 'pytest-doctest-import-twice'
+version = '1.0'
+description = 'pytest reproducer for doctest import behavior'
+authors = [{ name = 'Philipp A.', email = 'flying-sheep@web.de' }]
+readme = 'README.md'
+license = 'GPL-3.0-or-later'
+requires-python = '>=3.11'
+dependencies = [
+    'pytest',
+]
+
+[tool.pytest.ini_options]
+addopts = [
+    '--import-mode=importlib',
+    '--doctest-modules',
+]
