@@ -61,7 +61,7 @@ It’s also possible to put some code in ``conftest.py`` or a plugin and have th
 
 
 .. code:: pytb
- 
+
    File "<venv>/lib/python3.11/site-packages/_pytest/pathlib.py", line 538, in import_path
      spec.loader.exec_module(mod)  # type: ignore[union-attr]
      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
