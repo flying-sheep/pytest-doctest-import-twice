@@ -44,7 +44,7 @@ class MyVindictiveSingleton:
         if len(cls.BOOM) > 1:
             sep = "\n-----------------------------------\n\n"
             tbs = [
-                f"module_name: {t['module_name']}\n\n{''.join(traceback.format_tb(t['tb']))}"
+                f"module_name: {t['module_name']!r}\n\n{''.join(traceback.format_tb(t['tb']))}"
                 for t in cls.BOOM
             ]
             msg = f"Already initialized:\n{sep.join(tbs)}"
