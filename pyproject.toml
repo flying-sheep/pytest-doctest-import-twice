@@ -7,7 +7,7 @@ name = 'pytest-doctest-import-twice'
 version = '1.0'
 description = 'pytest reproducer for doctest import behavior'
 authors = [{ name = 'Philipp A.', email = 'flying-sheep@web.de' }]
-readme = 'README.md'
+readme = 'README.rst'
 license = 'GPL-3.0-or-later'
 requires-python = '>=3.11'
 dependencies = [
