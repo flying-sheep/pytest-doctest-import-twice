@@ -40,12 +40,12 @@ It’s also possible to put some code in ``conftest.py`` or a plugin and have th
 
 .. code:: pytb
 
-   File "/lib/python3.11/site-packages/_pytest/pathlib.py", line 538, in import_path
+   File "<venv>/lib/python3.11/site-packages/_pytest/pathlib.py", line 538, in import_path
      spec.loader.exec_module(mod)  # type: ignore[union-attr]
      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-   File "/home/phil/Dev/Python/_reproducers/pytest-doctest-import-twice/pytest_doctest_import_twice/__init__.py", line 1, in <module>
+   File "<proj>/pytest_doctest_import_twice/__init__.py", line 1, in <module>
      from .singleton import MyVindictiveSingleton
    File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
    File "<frozen importlib._bootstrap>", line 1128, in _find_and_load_unlocked
@@ -55,18 +55,18 @@ It’s also possible to put some code in ``conftest.py`` or a plugin and have th
    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-   File "/home/phil/Dev/Python/_reproducers/pytest-doctest-import-twice/pytest_doctest_import_twice/__init__.py", line 3, in <module>
+   File "<proj>/pytest_doctest_import_twice/__init__.py", line 3, in <module>
      instance = MyVindictiveSingleton()
                 ^^^^^^^^^^^^^^^^^^^^^^^
 
 
 .. code:: pytb
  
-   File "…/lib/python3.11/site-packages/_pytest/pathlib.py", line 538, in import_path
+   File "<venv>/lib/python3.11/site-packages/_pytest/pathlib.py", line 538, in import_path
      spec.loader.exec_module(mod)  # type: ignore[union-attr]
      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-   File "/home/phil/Dev/Python/_reproducers/pytest-doctest-import-twice/pytest_doctest_import_twice/__init__.py", line 3, in <module>
+   File "<proj>/pytest_doctest_import_twice/__init__.py", line 3, in <module>
      instance = MyVindictiveSingleton()
                 ^^^^^^^^^^^^^^^^^^^^^^^
