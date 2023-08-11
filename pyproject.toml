@@ -11,7 +11,7 @@ readme = 'README.rst'
 license = 'GPL-3.0-or-later'
 requires-python = '>=3.11'
 dependencies = [
-    'pytest',
+    'pytest @ git+https://github.com/pytest-dev/pytest.git',
 ]
 
 [tool.pytest.ini_options]
@@ -19,3 +19,6 @@ addopts = [
     '--import-mode=importlib',
     '--doctest-modules',
 ]
+
+[tool.hatch]
+metadata.allow-direct-references = true
